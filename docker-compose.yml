@@ -1,9 +1,9 @@
 version: '3.8'
 services:
-  sveltekit-sample:
+  app:
     build: ./
-    container_name: sveltekit-sample
-    command: sh -c "yarn run dev -- --host"
+    container_name: app
+    command: sh -c "yarn install && yarn run dev -- --host"
     ports:
       - '5173:5173'
     volumes:
